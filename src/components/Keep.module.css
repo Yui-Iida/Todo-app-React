@@ -1,0 +1,13 @@
+.keep {
+  background-color: #ffe459;
+  margin: 5px;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.keepTitle {
+  font-size: 30px;
+  padding: 10px;
+}
