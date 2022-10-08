@@ -13,7 +13,10 @@ const List = ({ todo, updateStatus }) => {
               return (
                 <>
                   <HStack justifyContent="flex-start" m={0} key={todo.id}>
-                    <Text key={todo.id} fontSize="30">
+                    <Text
+                      key={todo.id}
+                      fontSize={{ base: '20px', md: '30px', lg: '35px' }}
+                    >
                       {todo.content}
                     </Text>
 

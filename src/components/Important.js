@@ -5,7 +5,7 @@ import styles from './Important.module.css';
 const Important = ({ todo, setTodo, updateStatus }) => {
   return (
     <div className={styles.important}>
-      <Text p="2" fontSize={{ base: '32px', md: '45px', lg: '60px' }}>
+      <Text p="2" fontSize={{ base: '30px', md: '42px', lg: '55px' }}>
         Important
       </Text>
       {todo &&

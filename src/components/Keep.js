@@ -5,7 +5,7 @@ import styles from './Keep.module.css';
 const Keep = ({ todo, setTodo, updateStatus }) => {
   return (
     <div className={styles.keep}>
-      <Text p="1" fontSize={{ base: '25px', md: '30px', lg: '35px' }}>
+      <Text p="1" fontSize={{ base: '20px', md: '30px', lg: '35px' }}>
         Keep in mind
       </Text>
       {todo &&
