@@ -27,7 +27,11 @@ const NewInput = ({ todo, setTodo }) => {
       <HStack spacing={5} justifyContent="center">
         <Input
           size="md"
+<<<<<<< HEAD
           width={{ base: 'xs', md: 'sm', lg: 'md' }}
+=======
+          width="sm"
+>>>>>>> 9a10ad3c7e76e3d028b8bfa01025755b61e1b99b
           borderRadius="10px"
           background="white"
           border="none"
