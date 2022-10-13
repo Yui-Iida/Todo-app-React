@@ -8,8 +8,6 @@ const Todo = ({ todo, setTodo, updateStatus }) => {
 
   return (
     <div className={`content-${theme}`}>
-      {/* <div className={styles.todo}> */}
-      {/* <h1 className={styles.title}>Todo</h1> */}
       <div className="todo">
         <h1 className="title">Todo</h1>
 

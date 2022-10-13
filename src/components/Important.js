@@ -2,7 +2,7 @@ import { HStack, IconButton, Text } from '@chakra-ui/react';
 import { VscCheck } from 'react-icons/vsc';
 import { useTheme } from '../context/ThemeContext';
 
-const Important = ({ todo, setTodo, updateStatus }) => {
+const Important = ({ todo, updateStatus }) => {
   const [theme] = useTheme();
 
   return (
@@ -16,7 +16,6 @@ const Important = ({ todo, setTodo, updateStatus }) => {
             return (
               <HStack justify="center">
                 <IconButton
-                  // onClick={() => complete(todo.id)}
                   icon={<VscCheck />}
                   isRound
                   bg="white"
@@ -26,7 +25,6 @@ const Important = ({ todo, setTodo, updateStatus }) => {
                 />
                 <Text
                   key={todo.id}
-                  // fontSize="30"
                   color="white"
                   fontSize={{ base: '20px', md: '40px', lg: '56px' }}
                 >

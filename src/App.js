@@ -15,8 +15,6 @@ function App() {
     // { id: 3, content: 'Buy ticket', status: 'did' },
     // { id: 4, content: 'Go to bookstore', status: 'important' },
   ];
-  console.log(document);
-
   const [todo, setTodo] = useState(todoList);
 
   const updateStatus = (id, newStatus) => {
@@ -35,7 +33,6 @@ function App() {
     <ThemeProvider>
       <div className="App">
         <ThemeButton />
-
         <ChakraProvider>
           <Todo todo={todo} setTodo={setTodo} updateStatus={updateStatus} />
           <div className="flex">

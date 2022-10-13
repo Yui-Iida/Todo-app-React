@@ -16,7 +16,6 @@ const Keep = ({ todo, setTodo, updateStatus }) => {
             return (
               <HStack justifyContent="center">
                 <IconButton
-                  // onClick={() => complete(todo.id)}
                   icon={<VscCheck />}
                   isRound
                   size="sm"

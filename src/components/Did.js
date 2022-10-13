@@ -2,15 +2,7 @@ import { Text, HStack, VStack } from '@chakra-ui/react';
 
 import { useTheme } from '../context/ThemeContext';
 
-const Did = ({ todo, setTodo }) => {
-  const deleteTodo = id => {
-    const newTodos = todo.filter(todo => {
-      return todo.id !== id;
-    });
-
-    setTodo(newTodos);
-  };
-
+const Did = ({ todo }) => {
   const [theme] = useTheme();
 
   return (
