@@ -5,3 +5,124 @@
 .flex {
   display: flex;
 }
+
+.title {
+  font-size: 80px;
+  font-family: 'Ultra', serif;
+  font-weight: 400;
+}
+
+.did-title {
+  font-size: 100px;
+  font-weight: 600;
+  text-align: left;
+  padding: 15px;
+}
+
+/* theme pop */
+
+.content-pop {
+  background-color: antiquewhite;
+  margin: 10px 10px 5px 10px;
+  padding: 30px 0 50px 0;
+  border-radius: 10px;
+}
+
+.importantcontent-pop {
+  background-color: #b182ff;
+  margin: 5px;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.keepcontent-pop {
+  background-color: #ffe459;
+  margin: 5px;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.didcontent-pop {
+  background-color: #ff413f;
+  color: white;
+  margin: 5px 10px 10px 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* theme pastel */
+
+.content-pastel {
+  background-color: #d2daff;
+  margin: 10px 10px 5px 10px;
+  padding: 30px 0 50px 0;
+  border-radius: 10px;
+}
+
+.importantcontent-pastel {
+  background-color: #ecc5fb;
+  margin: 5px;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.keepcontent-pastel {
+  background-color: #cdf0ea;
+  margin: 5px;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.didcontent-pastel {
+  background-color: #faf4b7;
+  color: white;
+  margin: 5px 10px 10px 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* theme sports or retro?*/
+
+.content-retro {
+  background-color: #b22727;
+  margin: 10px 10px 5px 10px;
+  padding: 30px 0 50px 0;
+  border-radius: 10px;
+}
+
+.importantcontent-retro {
+  background-color: #f8cb2e;
+  margin: 5px;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.keepcontent-retro {
+  background-color: #ee5007;
+  margin: 5px;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.didcontent-retro {
+  background-color: #006e7f;
+  color: white;
+  margin: 5px 10px 10px 10px;
+  padding: 20px;
+  border-radius: 10px;
+}

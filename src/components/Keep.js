@@ -1,10 +1,12 @@
 import { HStack, IconButton, Text } from '@chakra-ui/react';
 import { VscCheck } from 'react-icons/vsc';
-import styles from './Keep.module.css';
+import { useTheme } from '../context/ThemeContext';
 
 const Keep = ({ todo, setTodo, updateStatus }) => {
+  const [theme] = useTheme();
+
   return (
-    <div className={styles.keep}>
+    <div className={`keepcontent-${theme}`}>
       <Text p="1" fontSize={{ base: '20px', md: '30px', lg: '35px' }}>
         Keep in mind
       </Text>
@@ -25,7 +27,7 @@ const Keep = ({ todo, setTodo, updateStatus }) => {
                 />
                 <Text
                   key={todo.id}
-                  fontSize={{ base: '20px', md: '25px', lg: '30px' }}
+                  fontSize={{ base: '15px', md: '25px', lg: '30px' }}
                 >
                   {todo.content}
                 </Text>

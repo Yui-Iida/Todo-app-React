@@ -1,11 +1,12 @@
 import { ChakraProvider } from '@chakra-ui/react';
-
 import { useState } from 'react';
 import './App.css';
 import Todo from './components/Todo.js';
 import Important from './components/Important.js';
 import Keep from './components/Keep.js';
 import Did from './components/Did.js';
+import ThemeButton from './components/ThemeButton';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   const todoList = [
@@ -31,20 +32,24 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <ChakraProvider>
-        <Todo todo={todo} setTodo={setTodo} updateStatus={updateStatus} />
-        <div className="flex">
-          <Important
-            todo={todo}
-            setTodo={setTodo}
-            updateStatus={updateStatus}
-          />
-          <Keep todo={todo} setTodo={setTodo} updateStatus={updateStatus} />
-        </div>
-        <Did todo={todo} setTodo={setTodo} updateStatus={updateStatus} />
-      </ChakraProvider>
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <ThemeButton />
+
+        <ChakraProvider>
+          <Todo todo={todo} setTodo={setTodo} updateStatus={updateStatus} />
+          <div className="flex">
+            <Important
+              todo={todo}
+              setTodo={setTodo}
+              updateStatus={updateStatus}
+            />
+            <Keep todo={todo} setTodo={setTodo} updateStatus={updateStatus} />
+          </div>
+          <Did todo={todo} setTodo={setTodo} updateStatus={updateStatus} />
+        </ChakraProvider>
+      </div>
+    </ThemeProvider>
   );
 }
 

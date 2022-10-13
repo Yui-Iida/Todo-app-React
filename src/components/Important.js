@@ -1,10 +1,12 @@
 import { HStack, IconButton, Text } from '@chakra-ui/react';
 import { VscCheck } from 'react-icons/vsc';
-import styles from './Important.module.css';
+import { useTheme } from '../context/ThemeContext';
 
 const Important = ({ todo, setTodo, updateStatus }) => {
+  const [theme] = useTheme();
+
   return (
-    <div className={styles.important}>
+    <div className={`importantcontent-${theme}`}>
       <Text p="2" fontSize={{ base: '30px', md: '42px', lg: '55px' }}>
         Important
       </Text>
@@ -26,7 +28,7 @@ const Important = ({ todo, setTodo, updateStatus }) => {
                   key={todo.id}
                   // fontSize="30"
                   color="white"
-                  fontSize={{ base: '30px', md: '40px', lg: '56px' }}
+                  fontSize={{ base: '20px', md: '40px', lg: '56px' }}
                 >
                   {todo.content}
                 </Text>

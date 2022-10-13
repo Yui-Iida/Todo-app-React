@@ -1,8 +1,10 @@
 import { HStack, Input, Button } from '@chakra-ui/react';
 import { useState } from 'react';
+import { useTheme } from '../context/ThemeContext';
 
 const NewInput = ({ todo, setTodo }) => {
   const [enteredTodo, setEnteredTodo] = useState('');
+  const [theme] = useTheme();
 
   const addTodo = e => {
     e.preventDefault();
@@ -22,6 +24,17 @@ const NewInput = ({ todo, setTodo }) => {
     setEnteredTodo('');
   };
 
+  const getButtonColor = theme => {
+    switch (theme) {
+      case 'pop':
+        return '#33e706';
+      case 'pastel':
+        return '#F675A8';
+      case 'retro':
+        return '#EEE6CE;';
+    }
+  };
+
   return (
     <form onSubmit={addTodo}>
       <HStack spacing={5} justifyContent="center">
@@ -37,7 +50,12 @@ const NewInput = ({ todo, setTodo }) => {
           value={enteredTodo}
           onChange={e => setEnteredTodo(e.target.value)}
         />
-        <Button size="md" bg="#33e706" borderRadius="12px" type="submit">
+        <Button
+          size="md"
+          bg={getButtonColor(theme)}
+          borderRadius="12px"
+          type="submit"
+        >
           Add
         </Button>
       </HStack>
