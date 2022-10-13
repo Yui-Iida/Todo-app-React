@@ -2,6 +2,8 @@
 
 'Todo App React' is a personal project using React, ChakraUI and more.
 
+![スクリーンショット 2022-10-13 13 49 57](https://user-images.githubusercontent.com/92433326/195588715-a3461bd6-ef30-4c34-bc58-152b7c9fb7d0.jpg)
+
 
 # Getting Started with Create React App
 
