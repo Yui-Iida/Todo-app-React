@@ -4,45 +4,40 @@
 
 ![スクリーンショット 2022-10-13 13 49 57](https://user-images.githubusercontent.com/92433326/195588715-a3461bd6-ef30-4c34-bc58-152b7c9fb7d0.jpg)
 
+## Overview
 
-# Getting Started with Create React App
+A multiple todo app with React.
+User can add todo item and move them to important/keep in mind/did category.
+On top, there are buttons which can change theme color, pop, pastel and retro.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tech Stack
 
-## Available Scripts
+Tech Stack: React | Create React App | Chakra UI | CSS | npm | Figma
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+- Fork and then clone this repository
+- Install npm with `npm install`
+- Create a .env file with your API key by The Movie Database API.
+- Run `npm start` to start the server in development
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Deployed version is here:
+https://yui-iida.github.io/Todo-app-React/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tests
 
-### `npm test`
+I did testing manually with checking on my browser below and passed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Chrome
+- Firefox
+- Brave
+- Opera
+- Safari
 
-### `npm run build`
+## Improvement
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Additionally I would add and improve in the future:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Delete and edit button
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
+Thank you very much for reading this!
