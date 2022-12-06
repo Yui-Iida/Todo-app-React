@@ -1,6 +1,6 @@
 # Todo App React
 
-'Todo App React' is a personal project using React, ChakraUI and more.
+'Todo App React' is a personal project using React, ChakraUI, etc.
 
 ![video2](https://user-images.githubusercontent.com/92433326/205973145-8bb87d98-2d2e-4b59-95a4-7fc8a08b5239.gif)
 
